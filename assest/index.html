@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="m-0 p-0">
+    <main
+      class="h-screen w-full p-2"
+      style="
+        background-image: linear-gradient(
+          to bottom,
+          #270002,
+          #310405,
+          #3c0307,
+          #480207,
+          #530105,
+          #600006,
+          #6e0006,
+          #7b0005,
+          #8e0006,
+          #a10006,
+          #b50004,
+          #c90100
+        );
+      "
+    >
+      <nav
+        class="h-[80px] fixed top-0 left-0 flex items-center justify-between bg-[#270002] backdrop-blur-sm opacity-80 w-full overflow-hidden z-40"
+      >
+        <div>
+          <img
+            src="./assest/logo.png"
+            alt="coke_logo"
+            class="max-h-full z-20 w-[150px]"
+          />
+        </div>
+
+        <!-- Hamburger for mobile -->
+        <div class="ham md:hidden">
+          <label class="hamburger">
+            <input type="checkbox" id="menu-toggle" />
+            <svg viewBox="0 0 32 32">
+              <path
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                class="line line-top-bottom"
+              ></path>
+              <path d="M7 16 27 16" class="line"></path>
+            </svg>
+          </label>
+        </div>
+
+        <!-- Navigation links -->
+        <ul
+          class="menu-links flex absolute top-0 hidden justify-center items-center h-[calc(100vh-80px)] gap-5 bg-black/80 backdrop-blur-lg mt-[80px] flex-col w-full md:static md:h-auto md:flex md:flex-row md:bg-transparent md:backdrop-blur-none md:mt-0 md: -none md:w-auto md:left-auto transition-all duration-300 z-50"
+        >
+          <li class="w-full text-center">
+            <a
+              href="#"
+              class="block py-2 text-white transition-colors duration-200"
+            >
+              Home
+            </a>
+          </li>
+          <li class="w-full text-center">
+            <a
+              href="#"
+              class="block py-2 text-white transition-colors duration-200"
+            >
+              About
+            </a>
+          </li>
+          <li class="w-full text-center">
+            <a
+              href="#"
+              class="block py-2 text-white transition-colors duration-200"
+            >
+              Contact
+            </a>
+          </li>
+          <li class="w-full text-center">
+            <a
+              href="#"
+              class="block py-2 text-white transition-colors duration-200"
+            >
+              Services
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hero w-full h-screen flex justify-center items-center">
+        <span class="text-[32rem] font-bold absolute text-white">COKE</span>
+        <img
+          src="./assest/ice.png"
+          alt=""
+          class="ice-bulk absolute scale-[0.5] top-[100px] left-[50px]"
+        />
+        <img
+          src="./assest/coke-glass.png"
+          class="absolute scale-[0.5]"
+          alt=""
+        />
+
+        <img
+          src="./assest/icec.png"
+          class="absolute scale-[0.2] left-[80px] bottom-[8px]"
+          alt=""
+        />
+      </div>
+    </main>
+    <div class="two h-screen w-full flex border bg-[#ffdcdc]">
+      <!-- Left Section -->
+      <div
+        class="left w-[50%] bg-transparent flex flex-col items-center justify-center"
+      >
+        <div class="h-[30%]"></div>
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          class="opacity-80 h-[70%] w-full"
+        >
+          <path
+            fill="#A85502"
+            d="M19,-16.1C31.1,-12.5,51.9,-12.7,58,-6.1C64.1,0.5,55.5,13.8,46,23.2C36.5,32.6,26.2,38.1,14.9,43.2C3.6,48.3,-8.7,53,-22.3,52.1C-35.8,51.1,-50.6,44.4,-62.1,32.2C-73.6,19.9,-81.8,2,-74.9,-9.1C-68,-20.2,-46.1,-24.4,-31.1,-27.5C-16.1,-30.6,-8,-32.4,-2.3,-29.7C3.4,-27,6.9,-19.6,19,-16.1Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right w-[50%] flex flex-col gap-9 items-start justify-center">
+        <h1 class="text-4xl font-bold i mb-4 text-black">
+          Lorem, ipsum dolor.
+        </h1>
+        <p class="text-lg leading-relaxed text-start">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eum
+          distinctio a optio? Nulla corporis id est? Placeat neque mollitia,
+          possimus doloribus molestiae repellat deserunt rerum quaerat optio
+          nulla amet. Eveniet fugit dolor vero repellendus eaque et blanditiis
+          laborum alias soluta, quas accusamus esse error omnis! Animi obcaecati
+          assumenda deleniti, libero, autem dolor quibusdam eius omnis molestiae
+          reprehenderit, repudiandae odit.
+        </p>
+      </div>
+    </div>
+
+    <section
+      class="h-screen w-full px-10 flex justify-evenly border items-center"
+      style="
+        background-image: linear-gradient(
+          to bottom,
+          #270002,
+          #310405,
+          #3c0307,
+          #480207,
+          #530105,
+          #600006,
+          #6e0006,
+          #7b0005,
+          #8e0006,
+          #a10006,
+          #b50004,
+          #c90100
+        );
+      "
+    >
+      <div
+        class="w-[25%] hover:-translate-y-5 transition-all relative h-[60%] py-10 flex flex-col items-center justify-end rounded-xl bg-red-50"
+      >
+        <img
+          src="./assest/cokebootle.png"
+          class="w-full absolute top-[20px] object-cover"
+          alt=""
+        />
+        <img
+          src="./assest/icec.png"
+          class="absolute top-4 opacity-75 rotate-[20deg]"
+          alt=""
+        />
+        <div class="content flex flex-col items-center">
+          <h2 class="font-bold text-xl p-2">Coca-Cola</h2>
+          <p class="text-xl p-3">Refreshing beverage</p>
+        </div>
+        <div
+          class="btn absolute bottom-[-15px] px-3 py-2 bg-black text-white rounded-xl"
+        >
+          Buy Now
+        </div>
+      </div>
+      <div
+        class="w-[25%] hover:-translate-y-5 transition-all relative h-[60%] py-10 flex flex-col items-center justify-end rounded-xl bg-red-50"
+      >
+        <img
+          src="./assest/cokebootle.png"
+          class="w-full absolute top-[20px] object-cover"
+          alt=""
+        />
+        <img
+          src="./assest/icec.png"
+          class="absolute top-4 opacity-75 rotate-[20deg]"
+          alt=""
+        />
+        <div class="content flex flex-col items-center">
+          <h2 class="font-bold text-xl p-2">Coca-Cola</h2>
+          <p class="text-xl p-3">Refreshing beverage</p>
+        </div>
+        <div
+          class="btn absolute bottom-[-15px] px-3 py-2 bg-black text-white rounded-xl"
+        >
+          Buy Now
+        </div>
+      </div>
+      <div
+        class="w-[25%] hover:-translate-y-5 transition-all relative h-[60%] py-10 flex flex-col items-center justify-end rounded-xl bg-red-50"
+      >
+        <img
+          src="./assest/cokebootle.png"
+          class="w-full absolute top-[20px] object-cover"
+          alt=""
+        />
+        <img
+          src="./assest/icec.png"
+          class="absolute top-4 opacity-75 rotate-[20deg]"
+          alt=""
+        />
+        <div class="content flex flex-col items-center">
+          <h2 class="font-bold text-xl p-2">Coca-Cola</h2>
+          <p class="text-xl p-3">Refreshing beverage</p>
+        </div>
+        <div
+          class="btn absolute bottom-[-15px] px-3 py-2 bg-black text-white rounded-xl"
+        >
+          Buy Now
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
